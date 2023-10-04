@@ -5,6 +5,14 @@ import propertyImg from "../../../public/assets/projects/property.jpg";
 import cryptoImg from "../../../public/assets/projects/crypto.jpg";
 import netflixImg from "../../../public/assets/projects/netflix.jpg";
 import twitchImg from "../../../public/assets/projects/twitch.jpg";
+import tradekia from "../../../public/assets/projects/tradekia.png";
+import tradekiaapp from "../../../public/assets/projects/tradkiyaapp.png";
+import bistro from "../../../public/assets/projects/bristro.png";
+import fufi from "../../../public/assets/projects/fufi.png";
+import fufiedge from "../../../public/assets/projects/fufiedge.png";
+import onenine from "../../../public/assets/projects/oneninelabs.png";
+import bigbankexchange from "../../../public/assets/projects/bigbankexchange.png";
+import bigbank from "../../../public/assets/projects/bigbankapp.png";
 
 // import netflixImg from "../../../public/next.svg";
 
@@ -24,28 +32,54 @@ const Projects = () => {
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
-            title="Property Finder"
-            backgroundImg={propertyImg}
-            projectUrl="/property"
+            title="Tradekia Crypto Exchange"
+            backgroundImg={tradekia}
+            projectUrl="https://tradekia.com"
+            tech="MERN Stack"
+          />
+          <ProjectItem
+            title="Bistro UI"
+            backgroundImg={bistro}
+            projectUrl="https://bistro-cafe-seven.vercel.app"
+            tech="ReactJS + Framer Motion"
+          />
+          <ProjectItem
+            title="FutureFi UI"
+            backgroundImg={fufi}
+            projectUrl="https://fufi.info"
+            tech="React JS + AOS"
+          />
+
+          <ProjectItem
+            title="OneNineLabs UI"
+            backgroundImg={onenine}
+            projectUrl="https://oneninelabs.com"
             tech="React JS"
           />
           <ProjectItem
-            title="Crypto App"
-            backgroundImg={cryptoImg}
-            projectUrl="/crypto"
-            tech="React JS"
+            title="FuFi Edge App"
+            backgroundImg={fufiedge}
+            projectUrl="https://play.google.com/store/apps/details?id=com.futurefinance.fufiedge&hl=en-IN"
+            tech="Flutter + NodeJS"
           />
           <ProjectItem
-            title="Netflix App"
-            backgroundImg={netflixImg}
-            projectUrl="/netflix"
-            tech="React JS"
+            title="Tradekia Crypto App"
+            backgroundImg={tradekiaapp}
+            projectUrl="https://play.google.com/store/apps/details?id=com.finance.tradekiya&hl=en-IN"
+            tech="Flutter + NodeJS"
           />
           <ProjectItem
-            title="Twitch UI"
-            backgroundImg={twitchImg}
-            projectUrl="/twitch"
-            tech="Next JS"
+            title="BigBank UI"
+            backgroundImg={bigbankexchange}
+            projectUrl="https://bigbankexchange.com"
+            tech="ReactJS + AOS"
+          />
+
+          <ProjectItem
+            title="BigBank App"
+            backgroundImg={bigbank}
+            projectUrl="https://play.google.com/store/apps/details?id=www.bigbankxchange.com&hl=en-IN"
+            tech="Flutter + NodeJS"
           />
         </div>
       </div>
