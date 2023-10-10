@@ -9,7 +9,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 // import { useRouter } from 'next/router';
 // import # from "../public/assets/sgLog.jpg";
-// import # from "../public/sglogo.jpg";
+import SGlogo from "../public/SGlogo.jpg";
 import { BsFillSunFill, BsMoonFill, BsCheck } from "react-icons/bs";
 import { useTheme } from "next-themes";
 
@@ -64,22 +64,21 @@ const Navbar = () => {
       // style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl z-[10] ease-in-out duration-300 bg-gray-900/95"
+          ? "fixed w-full h-20 shadow-xl z-[10] ease-in-out duration-300 bg-gray-900/75"
           : "fixed w-full h-20 z-[10]  border-b-2 border-b-gray-50 shadow-md "
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <div className="flex flex-row justify-between items-center space-x-4">
           <Link href="/dashboard">
-            <div className="ml-2 lg:ml-8   text-teal-400 bg-gray-700 dark:bg-white h-16 w-16 rounded-full flex justify-center items-center text-3xl ">
-              S G
-              {/* <Image
-              src={#}
-              alt="/"
-              width="125"
-              height="50"
-              className="cursor-pointer rounded-full"
-            /> */}
+            <div className="ml-2 lg:ml-8  shadow-xl dark:shadow-teal-600  h-16 w-16 rounded-full flex justify-center items-center ">
+              <Image
+                src={SGlogo}
+                alt="/"
+                width="125"
+                height="50"
+                className="cursor-pointer rounded-full bg-white"
+              />
             </div>
           </Link>
           <button
@@ -102,7 +101,16 @@ const Navbar = () => {
                   " border-b border-cyan-500 text-cyan-400")
               }
             >
-              <Link href="/dashboard">Home</Link>
+              <Link
+                href="/dashboard"
+                className={
+                  "p-3 rounded-tr-xl rounded-bl-xl hover:bg-gray-600 dark:hover:bg-cyan-400 " +
+                  (active == undefined &&
+                    " bg-gradient-to-tr  from-black to-neutral-400  dark:bg-gradient-to-tr  dark:from-indigo-500 dark:from-12% dark:via-sky-500 dark:via-33% dark:to-emerald-500 dark:to-70%  ")
+                }
+              >
+                Home
+              </Link>
             </li>
             <li
               className={
@@ -110,7 +118,16 @@ const Navbar = () => {
                 (active == "about" && " border-b border-cyan-500")
               }
             >
-              <Link href="/dashboard/about">About</Link>
+              <Link
+                href="/dashboard/about"
+                className={
+                  "p-3 rounded-tr-xl rounded-bl-xl hover:bg-gray-600 dark:hover:bg-cyan-400 " +
+                  (active == "about" &&
+                    " bg-gradient-to-tr  from-black to-neutral-400  dark:bg-gradient-to-tr  dark:from-indigo-500 dark:from-12% dark:via-sky-500 dark:via-33% dark:to-emerald-500 dark:to-70%")
+                }
+              >
+                About
+              </Link>
             </li>
             <li
               className={
@@ -118,7 +135,16 @@ const Navbar = () => {
                 (active == "skills" && " border-b border-cyan-500")
               }
             >
-              <Link href="/dashboard/skills">Skills</Link>
+              <Link
+                href="/dashboard/skills"
+                className={
+                  "p-3 rounded-tr-xl rounded-bl-xl hover:bg-gray-600 dark:hover:bg-cyan-400 " +
+                  (active == "skills" &&
+                    "bg-gradient-to-tr  from-black to-neutral-400  dark:bg-gradient-to-tr  dark:from-indigo-500 dark:from-12% dark:via-sky-500 dark:via-33% dark:to-emerald-500 dark:to-70%  ")
+                }
+              >
+                Skills
+              </Link>
             </li>
             <li
               className={
@@ -126,31 +152,58 @@ const Navbar = () => {
                 (active == "projects" && " border-b border-cyan-500")
               }
             >
-              <Link href="/dashboard/projects">Projects</Link>
+              <Link
+                href="/dashboard/projects"
+                className={
+                  "p-3 rounded-tr-xl rounded-bl-xl hover:bg-gray-600 dark:hover:bg-cyan-400 " +
+                  (active == "projects" &&
+                    "bg-gradient-to-tr  from-black to-neutral-400  dark:bg-gradient-to-tr  dark:from-indigo-500 dark:from-12% dark:via-sky-500 dark:via-33% dark:to-emerald-500 dark:to-70%")
+                }
+              >
+                Projects
+              </Link>
             </li>
             <li
               className={
-                "ml-10 text-sm uppercase hover:border-b hover:border-cyan-500 dark:text-white  text-cyan-400" +
+                "ml-10 text-sm uppercase text-cyan-400 hover:border-b hover:border-cyan-500 dark:text-white  " +
                 (active == "resume" && " border-b border-cyan-500")
               }
             >
-              <Link href="/dashboard/resume">Resume</Link>
+              <Link
+                href="/dashboard/resume"
+                className={
+                  "p-3 rounded-tr-xl rounded-bl-xl hover:bg-gray-600 dark:hover:bg-cyan-400 " +
+                  (active == "resume" &&
+                    "bg-gradient-to-tr  from-black to-neutral-400  dark:bg-gradient-to-tr  dark:from-indigo-500 dark:from-12% dark:via-sky-500 dark:via-33% dark:to-emerald-500 dark:to-70% ")
+                }
+              >
+                Resume
+              </Link>
             </li>
             <li
               className={
                 "ml-10 text-sm uppercase hover:border-b hover:border-cyan-500 dark:text-white  text-cyan-400" +
-                (active == "contact" && " border-b border-cyan-500")
+                (active == "contact" && " bg-cyan-400 ")
               }
             >
-              <Link href="/dashboard/contact">Contact</Link>
+              <Link
+                href="/dashboard/contact"
+                className={
+                  "p-3 rounded-tr-xl rounded-bl-xl hover:bg-gray-600 dark:hover:bg-cyan-400 " +
+                  (active == "contact" &&
+                    "bg-gradient-to-tr  from-black to-neutral-400  dark:bg-gradient-to-tr  dark:from-indigo-500 dark:from-12% dark:via-sky-500 dark:via-33% dark:to-emerald-500 dark:to-70% ")
+                }
+              >
+                Contact
+              </Link>
             </li>
           </ul>
 
           {/* Hamburger Icon */}
           <div
-            style={{ color: `${linkColor}` }}
+            // style={{ color: `${linkColor}` }}
             onClick={handleNav}
-            className="md:hidden"
+            className="md:hidden text-black dark:text-white"
           >
             <AiOutlineMenu size={25} />
           </div>

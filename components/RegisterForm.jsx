@@ -52,7 +52,7 @@ export default function RegisterForm() {
       if (res.ok) {
         const form = e.target;
         form.reset();
-        router.push("/dashboard");
+        router.push("/login");
       } else {
         console.log("User registration failed.");
       }
@@ -66,7 +66,16 @@ export default function RegisterForm() {
   return (
     <div className="w-96 grid mt-44">
       <div className="shadow-lg p-5 rounded-lg border-t-4 border-teal-400">
-        <h1 className="text-xl font-bold my-4">Register</h1>
+        <div className="flex justify-between items-center">
+          {" "}
+          <h1 className="text-xl font-bold my-4">Register</h1>
+          <Link href={"/dashboard"}>
+            {" "}
+            <button className="bg-teal-600 text-white font-bold cursor-pointer px-4 py-1 rounded-lg h-10">
+              Home
+            </button>{" "}
+          </Link>
+        </div>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-3">
           <input

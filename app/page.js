@@ -5,14 +5,12 @@ import { redirect } from "next/navigation";
 import { authOptions } from "./api/auth/[...nextauth]/route";
 
 const Home = async () => {
-  // let [session, setSession] = useState(true);
-  // let router = useRouter();
-  const session = await getServerSession(authOptions);
+  // const session = await getServerSession(authOptions);
 
-  if (!session) return redirect("/login");
-  if (session) return redirect("/dashboard");
+  // if (!session) return redirect("/login");
+  // if (session) return redirect("/dashboard");
 
-  return null;
+  return redirect("/dashboard");
   // <main>Main Root Home Page</main>;
 };
 export default Home;

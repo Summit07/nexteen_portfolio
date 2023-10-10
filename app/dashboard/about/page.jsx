@@ -8,10 +8,10 @@ const About = () => {
     <div id="about" className="w-full md:h-screen p-2 flex items-center py-16 ">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
-          <p className="uppercase text-xl font-semibold  text-gray-600 tracking-widest dark:text-cyan-400 md:text-3xl">
+          <p className="uppercase text-lg  tracking-widest  md:text-3xl font-extrabold bg-clip-text text-transparent bg-gradient-to-tr  from-indigo-500 from-12% via-sky-500 via-33% to-emerald-500 to-70%">
             About
           </p>
-          <h2 className="py-4 text-gray-800 text-6xl dark:text-white">
+          <h2 className="py-4 font-semibold text-3xl md:text-5xl  bg-clip-text text-transparent dark:bg-gradient-to-tr bg-gradient-to-tr dark:from-white from-black to-neutral-400 dark:to-neutral-900">
             Who I Am
           </h2>
           <p className="py-2 text-gray-600 dark:text-white">
