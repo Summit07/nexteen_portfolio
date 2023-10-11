@@ -71,8 +71,9 @@ const Contact = () => {
           setPhone("");
           setsubject("");
           settmessage("");
+          return result;
         });
-
+      console.log(res);
       if (res?.error) {
         setError("Invalid Credentials");
         return;
