@@ -18,7 +18,7 @@ export async function POST(req, res) {
     if (user && user.length == 0) {
       return Response.json(
         { message: "Email not register or not found" },
-        { status: 200 }
+        { status: 401 }
       );
     } else {
       await offerModel.create({ name, email, phone, subject, tmessage });

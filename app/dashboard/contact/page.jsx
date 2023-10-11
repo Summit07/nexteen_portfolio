@@ -37,17 +37,19 @@ import {
 const Contact = () => {
   let { data: session } = useSession();
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState(session?.user?.email);
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
   const [subject, setsubject] = useState("");
   const [tmessage, settmessage] = useState("");
   const [error, setError] = useState("");
   let router = useRouter();
+  let placeName = session?.user?.email;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(name, email, phone);
+
+    //console.log(name, email, phone);
 
     try {
       const res = await fetch("/api/offers", {
@@ -55,7 +57,7 @@ const Contact = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name,
-          email,
+          email: session.user.email,
           phone,
           subject,
           tmessage,
@@ -113,8 +115,8 @@ const Contact = () => {
                         <input
                           className="h-12 rounded-lg from-cyan-500"
                           onChange={(e) => setEmail(e.target.value)}
-                          type="text"
-                          placeholder="  Email"
+                          type="email"
+                          placeholder=" Email "
                         />
                         <input
                           className="h-12 rounded-lg from-cyan-500"
@@ -260,6 +262,8 @@ const Contact = () => {
                     onChange={(e) => setEmail(e.target.value)}
                     type="email"
                     name="email"
+                    value={placeName}
+                    readOnly
                     required
                   />
                 </div>
