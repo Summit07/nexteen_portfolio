@@ -43,6 +43,7 @@ const Contact = () => {
   const [subject, setsubject] = useState("");
   const [tmessage, settmessage] = useState("");
   const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
   let router = useRouter();
   let placeName = session?.user?.email;
 
@@ -72,8 +73,13 @@ const Contact = () => {
           settmessage("");
         });
 
-      if (res.error) {
+      if (res?.error) {
         setError("Invalid Credentials");
+        return;
+      }
+
+      if (res?.message) {
+        setSuccess(res.message);
         return;
       }
       // router.push("/dashboard/contact");
@@ -358,6 +364,11 @@ const Contact = () => {
                   <button className="w-full p-4 text-gray-100   rounded-lg hover:bg-cyan-400  px-4 py-4 mt-4 mr-2 mb-4 bg-gradient-to-tr  from-indigo-500 from-12% via-sky-500 via-33% to-emerald-500 to-70% ">
                     Send Message
                   </button>
+                )}
+                {success && (
+                  <div className="bg-green-500 text-white w-fit text-sm py-1 px-3 rounded-md mt-2 ">
+                    {success}
+                  </div>
                 )}
               </form>
             </div>
