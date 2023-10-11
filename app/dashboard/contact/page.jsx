@@ -64,7 +64,13 @@ const Contact = () => {
         }),
       })
         .then((response) => response.json())
-        .then((result) => console.log(result));
+        .then((result) => {
+          console.log(result);
+          setName("");
+          setPhone("");
+          setsubject("");
+          settmessage("");
+        });
 
       if (res.error) {
         setError("Invalid Credentials");
