@@ -23,7 +23,7 @@ export async function POST(req, res) {
     } else {
       await offerModel.create({ name, email, phone, subject, tmessage });
       return Response.json(
-        { message: "Offer created successfully" },
+        { message: "Message Send Successfully" },
         { status: 200 }
       );
     }

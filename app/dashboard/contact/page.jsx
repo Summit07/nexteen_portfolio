@@ -81,6 +81,7 @@ const Contact = () => {
 
       if (res?.message) {
         setSuccess(res.message);
+        router.refresh();
         return;
       }
       // router.push("/dashboard/contact");
