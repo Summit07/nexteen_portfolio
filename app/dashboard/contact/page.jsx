@@ -17,6 +17,7 @@ import cwt3y from "../../../public/assets/office/CWTimage.jpg";
 import cwtpvr from "../../../public/assets/office/pvrcwt.jpg";
 import holifufi from "../../../public/assets/office/holifufi.jpg";
 import fufid from "../../../public/assets/office/idCard.jpg";
+
 import {
   HoverCard,
   HoverCardContent,
@@ -37,7 +38,7 @@ import {
 const Contact = () => {
   let { data: session } = useSession();
   const [name, setName] = useState("");
-  const [email, setEmail] = useState(session?.user?.email);
+  const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
   const [subject, setsubject] = useState("");
@@ -58,7 +59,7 @@ const Contact = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name,
-          email: session.user.email,
+          email: email,
           phone,
           subject,
           tmessage,
@@ -73,7 +74,7 @@ const Contact = () => {
           settmessage("");
           return result;
         });
-      console.log(res);
+
       if (res?.error) {
         setError("Invalid Credentials");
         return;
@@ -85,6 +86,25 @@ const Contact = () => {
         return;
       }
       // router.push("/dashboard/contact");
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+
+    try {
+      const res = await signIn("credentials", {
+        email,
+        password,
+        redirect: false,
+      });
+
+      if (res.error) {
+        setError("Invalid Credentials");
+        return;
+      }
     } catch (error) {
       console.log(error);
     }
@@ -123,7 +143,7 @@ const Contact = () => {
 
                     <div>
                       <form
-                        onSubmit={handleSubmit}
+                        onSubmit={handleLogin}
                         className="flex flex-col gap-3 mt-6"
                       >
                         <input
