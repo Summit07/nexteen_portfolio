@@ -11,10 +11,6 @@ import { authOptions } from "../api/auth/[...nextauth]/route";
 const DashboardPage = async () => {
   const session = await getServerSession(authOptions);
 
-  // console.log(sessions);
-  // text-[#5651e5]
-  // if (!session) redirect("/login");
-
   return (
     <div id="home" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto   p-2 flex justify-center items-center">
@@ -22,14 +18,14 @@ const DashboardPage = async () => {
           <p className="uppercase font-semibold tracking-widest bg-clip-text text-transparent dark:bg-gradient-to-r bg-gradient-to-tr dark:from-white from-black to-neutral-600 dark:to-neutral-700  text-sm lg:text-xl mb-2">
             LET&#39;S BUILD SOMETHING TOGETHER
           </p>
-          <h1 className="py-4 text-gray-700 lg:text-7xl text-3xl dark:text-white   font-semibold">
+          <h1 className="py-4 text-gray-700 md:text-7xl text-3xl dark:text-white   font-semibold">
             Hi, I&#39;m{" "}
             <span className=" font-extrabold bg-clip-text text-transparent bg-gradient-to-tr  from-indigo-500 from-12% via-sky-500 via-33% to-emerald-500 to-70% ">
               {" "}
               Sumit Gupta
             </span>
           </h1>
-          <h1 className="py-2  text-3xl md:text-6xl   bg-clip-text text-transparent dark:bg-gradient-to-r bg-gradient-to-tr dark:from-white from-black to-neutral-600 dark:to-neutral-700 ">
+          <h1 className="py-2  text-2xl md:text-6xl   bg-clip-text text-transparent dark:bg-gradient-to-r bg-gradient-to-tr dark:from-white from-black to-neutral-600 dark:to-neutral-700 ">
             A FullStack Web & Solidity Blockchain Developer
           </h1>
           <p className="py-4  sm:max-w-[70%] m-auto text-sm md:text-lg  bg-clip-text text-transparent dark:bg-gradient-to-r bg-gradient-to-tr dark:from-white from-black to-neutral-600 dark:to-neutral-700 ">
