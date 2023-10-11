@@ -185,7 +185,7 @@ const Contact = () => {
               </div>
               <div>
                 <h2 className="py-3 tracking-wide  text-gray-800 text-3xl font-semibold dark:text-white">
-                  Sumiit Gupta
+                  Sumit Gupta
                 </h2>
                 <p>Full-Stack Developer</p>
                 <p>summitgupta07@gmail.com</p>
@@ -217,7 +217,7 @@ const Contact = () => {
                     </div>
                   </a>
 
-                  <Link href="/SumitRelieving.pdf">
+                  <Link href="/Summiit.pdf">
                     <div className="rounded-full shadow-lg shadow-gray-400 dark:shadow-blue-500  p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <HoverCard>
                         <HoverCardTrigger>

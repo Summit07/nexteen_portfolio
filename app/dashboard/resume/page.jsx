@@ -28,7 +28,7 @@ const resume = () => {
         </h2>
         <div className=" my-4 p-4 w-full flex justify-between items-center rounded-lg bg-gradient-to-tr  from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-70% ">
           <h2 className="text-center  text-3xl  uppercase     tracking-wide  md:text-3xl font-extrabold bg-clip-text text-transparent dark:bg-gradient-to-tr bg-gradient-to-tr dark:from-white from-black to-neutral-400 dark:to-neutral-900">
-            Summit Gupta
+            Sumit Gupta
           </h2>
           <div className="flex">
             <a
@@ -46,7 +46,7 @@ const resume = () => {
               <FaGithub size={20} style={{ marginRight: "1rem" }} />
             </a>
 
-            <Link href="/Sumiit.pdf">
+            <Link href="/Summiit.pdf">
               <HoverCard>
                 <HoverCardTrigger>
                   <ImAttachment size={20} style={{ marginRight: "1rem" }} />
@@ -115,7 +115,7 @@ const resume = () => {
             <span className="px-2">|</span>Lucknow, UP
           </p>
           <p className="py-1 italic">
-            Coding Web Tech ,Fulltime Work (01/July/2023 - 30/June/2023)
+            Coding Web Tech ,Fulltime Work (01/July/2023 - 30/September/2023)
           </p>
           <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
             <li>
@@ -198,7 +198,7 @@ const resume = () => {
             <span className="px-2">|</span>Jaunpur , UP
           </p>
           <p className="py-1 italic">
-            New Shakti Certification (Dec/2020 – June/2022)
+            New Shakti Certification (Dec/2020 – August/2022)
           </p>
           <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
             <li>
@@ -221,7 +221,9 @@ const resume = () => {
             <span className="font-bold">THERE APP, OPENSOURCE PROJECT</span>
             <span className="px-2">|</span>Github
           </p>
-          <p className="py-1 italic">Freelance / Learning (2019 – 2020)</p>
+          <p className="py-1 italic">
+            Freelance / Learning (Nov/2019 – Dec/2020)
+          </p>
           <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
             <li>
               After Completing the Btech I preparing for the Government

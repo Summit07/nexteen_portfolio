@@ -26,7 +26,7 @@ const DashboardPage = async () => {
             Hi, I&#39;m{" "}
             <span className=" font-extrabold bg-clip-text text-transparent bg-gradient-to-tr  from-indigo-500 from-12% via-sky-500 via-33% to-emerald-500 to-70% ">
               {" "}
-              Sumiit Gupta
+              Sumit Gupta
             </span>
           </h1>
           <h1 className="py-2  text-3xl md:text-6xl   bg-clip-text text-transparent dark:bg-gradient-to-r bg-gradient-to-tr dark:from-white from-black to-neutral-600 dark:to-neutral-700 ">
