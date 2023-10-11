@@ -41,7 +41,9 @@ export default function LoginForm() {
   return (
     <div className=" w-96 grid mt-44">
       {isloding ? (
-        "loding...."
+        <div class=" flex justify-center items-center">
+          <div class="animate-spin rounded-full h-32 w-32 border-b-4 border-black dark:border-gray-100"></div>
+        </div>
       ) : (
         <div className="shadow-lg p-5 rounded-lg border-t-4 border-teal-400">
           <div className="flex justify-between items-center">
