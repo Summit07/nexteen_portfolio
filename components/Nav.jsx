@@ -279,7 +279,7 @@ const Navbar = () => {
                   </div>
                 </a>
                 <a
-                  href="https://github.com/fireclint"
+                  href="https://github.com/Summit07"
                   target="_blank"
                   rel="noreferrer"
                 >
