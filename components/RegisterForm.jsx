@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { useSession } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
 
 export default function RegisterForm() {
   const { data: session } = useSession();
@@ -110,6 +110,22 @@ export default function RegisterForm() {
             Already have an account? <span className="underline">Login</span>
           </Link>
         </form>
+        {/* <div>
+          <h1>Sign into Github below</h1>
+          <button
+            onClick={() => signIn("github")}
+            className="bg-black text-white w-full"
+          >
+            Sign In
+          </button>
+          <h1>Sign into Google below</h1>
+          <button
+            onClick={() => signIn("google")}
+            className="bg-red-500 text-white w-full"
+          >
+            Sign In
+          </button>
+        </div> */}
       </div>
     </div>
   );

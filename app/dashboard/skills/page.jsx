@@ -3,8 +3,11 @@ import React from "react";
 import Html from "../../../public/assets/skills/html.png";
 import Css from "../../../public/assets/skills/css.png";
 import Javascript from "../../../public/assets/skills/javascript.png";
-import ReactImg from "../../../public/assets/skills/react.png";
+import reduxImg from "../../../public/assets/skills/reduxImg.svg";
+import openzepImg from "../../../public/assets/skills/openzepImg.svg";
+import prismaImg from "../../../public/assets/skills/prismaImg.svg";
 import Tailwind from "../../../public/assets/skills/tailwind.png";
+import ReactImg from "../../../public/assets/skills/react.png";
 import Github from "../../../public/assets/skills/github1.png";
 import NextJS from "../../../public/assets/skills/nextjs.png";
 import Mongo from "../../../public/assets/skills/mongo.png";
@@ -19,7 +22,7 @@ import vercel from "../../../public/assets/skills/logo-vercel.svg";
 
 const Skills = () => {
   return (
-    <div id="skills" className="w-full lg:h-screen p-2 mt-20 md:mt-40 pb-20">
+    <div id="skills" className="w-full lg:h-screen p-2 mt-20 md:mt-80 pb-20">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="uppercase text-lg   tracking-widest  md:text-3xl font-extrabold bg-clip-text text-transparent bg-gradient-to-tr  from-indigo-500 from-12% via-sky-500 via-33% to-emerald-500 to-70%">
           Skills
@@ -181,13 +184,33 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className="p-6 shadow-xl bg-gray-900/30 dark:bg-gray-200/20  dark:shadow-cyan-500 rounded-xl hover:scale-105 ease-in duration-300">
+          <div className="p-6 shadow-xl bg-gray-900/30 dark:bg-gray-200/20  dark:shadow-violet-700 rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <Image src={ReactImg} width="64px" height="64px" alt="/" />
+                <Image src={reduxImg} width="64px" height="64px" alt="/" />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>React Native</h3>
+                <h3>Redux</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl bg-gray-900/30 dark:bg-gray-200/20  dark:shadow-cyan-500 rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center mt-4">
+              <div className="m-auto">
+                <Image src={openzepImg} width="64px" height="64px" alt="/" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Open Zeppline</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-6 shadow-xl bg-gray-900/30 dark:bg-gray-200/20  dark:shadow-white rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="grid grid-cols-2 gap-4 justify-center items-center">
+              <div className="m-auto">
+                <Image src={prismaImg} width="64px" height="64px" alt="/" />
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h3>Prisma</h3>
               </div>
             </div>
           </div>

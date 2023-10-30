@@ -237,7 +237,7 @@ const Contact = () => {
                     </div>
                   </a>
 
-                  <Link href="/Summiit.pdf">
+                  <Link href="/SUMMIIIT.pdf">
                     <div className="rounded-full shadow-lg shadow-gray-400 dark:shadow-blue-500  p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <HoverCard>
                         <HoverCardTrigger>

@@ -46,7 +46,7 @@ const resume = () => {
               <FaGithub size={20} style={{ marginRight: "1rem" }} />
             </a>
 
-            <Link href="/Summiit.pdf">
+            <Link href="/SUMMIIIT.pdf">
               <HoverCard>
                 <HoverCardTrigger>
                   <ImAttachment size={20} style={{ marginRight: "1rem" }} />

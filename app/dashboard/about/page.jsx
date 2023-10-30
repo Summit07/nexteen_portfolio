@@ -15,7 +15,8 @@ const About = () => {
             Who I Am
           </h2>
           <p className="py-2 text-gray-600 dark:text-white">
-            / / I am an allround developer for frontend and backend.
+            / / I am an allround developer for Frontend, Backend and Solidity
+            Blockchain.
           </p>
           <p className="py-2 text-gray-600 dark:text-white">
             I have always had a knack for technology and working with computers.
@@ -27,7 +28,7 @@ const About = () => {
             Fascinated with how intricate programming can be I was quickly drawn
             to learn more. I am learning solidity and was even more enthused
             with making websites interactive. I am now spending my time building
-            projects with Next JS and learning new technologies like Solidity
+            projects with Next JS and handling new technologies like Solidity
             and Blockchain.
           </p>
           <Link href="/dashboard/projects">

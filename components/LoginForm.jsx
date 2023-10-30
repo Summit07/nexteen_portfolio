@@ -1,10 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import { signIn, useSession } from "next-auth/react";
 import { useState } from "react";
-import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import { useSession } from "next-auth/react";
 
 export default function LoginForm() {
   const { data: session } = useSession();
@@ -12,6 +11,7 @@ export default function LoginForm() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   let [isloding, setIsLoding] = useState(false);
+  console.log(session);
 
   const router = useRouter();
 
@@ -62,12 +62,14 @@ export default function LoginForm() {
               onChange={(e) => setEmail(e.target.value)}
               type="text"
               placeholder="  Email"
+              required
             />
             <input
               className="h-12 rounded-lg from-cyan-500"
               onChange={(e) => setPassword(e.target.value)}
               type="password"
               placeholder="  Password"
+              required
             />
             <button className="bg-teal-600 text-white font-bold cursor-pointer px-6 py-2 rounded-lg mt-4">
               Login
@@ -82,6 +84,22 @@ export default function LoginForm() {
               Don't have an account? <span className="underline">Register</span>
             </Link>
           </form>
+          {/* <div>
+          <h1>Sign into Github below</h1>
+          <button
+            onClick={() => signIn("github")}
+            className="bg-black text-white w-full"
+          >
+            Sign In
+          </button>
+          <h1>Sign into Google below</h1>
+          <button
+            onClick={() => signIn("google")}
+            className="bg-red-500 text-white w-full"
+          >
+            Sign In
+          </button>
+          </div> */}
         </div>
       )}
     </div>
