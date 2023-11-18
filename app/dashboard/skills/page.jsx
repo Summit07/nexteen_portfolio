@@ -20,6 +20,11 @@ import swagger from "../../../public/assets/skills/swagger.svg";
 
 import vercel from "../../../public/assets/skills/logo-vercel.svg";
 
+export const metadata = {
+  title: "Skill | Summiit Gupta",
+  description: "Portfolio of Summiit Gupta",
+};
+
 const Skills = () => {
   return (
     <div id="skills" className="w-full lg:h-screen p-2 mt-20 md:mt-80 pb-20">

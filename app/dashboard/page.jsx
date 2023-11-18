@@ -8,6 +8,11 @@ import { redirect } from "next/navigation";
 
 import { authOptions } from "../api/auth/[...nextauth]/route";
 
+export const metadata = {
+  title: "Summiit Gupta | Dashboard",
+  description: "Portfolio of Summiit Gupta",
+};
+
 const DashboardPage = async () => {
   const session = await getServerSession(authOptions);
 

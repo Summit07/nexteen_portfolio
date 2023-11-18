@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -15,12 +14,17 @@ import onenine from "../../../public/assets/projects/oneninelabs.png";
 import bigbankexchange from "../../../public/assets/projects/bigbankexchange.png";
 import bigbank from "../../../public/assets/projects/bigbankapp.png";
 import homeland from "../../../public/assets/projects/homeland.png";
-import { useSession } from "next-auth/react";
+
 // import netflixImg from "../../../public/next.svg";
 
 // import twitchImg from "../../../public/vercel.svg";
 
 import ProjectItem from "../../../components/ProjectItem";
+
+export const metadata = {
+  title: "Projects | Summiit Gupta",
+  description: "Portfolio of Summiit Gupta",
+};
 
 const Projects = () => {
   return (

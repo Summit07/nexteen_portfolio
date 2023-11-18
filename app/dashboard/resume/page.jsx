@@ -10,6 +10,11 @@ import {
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
 
+export const metadata = {
+  title: "Resume | Summiit Gupta",
+  description: "Portfolio of Summiit Gupta",
+};
+
 const resume = () => {
   return (
     <>

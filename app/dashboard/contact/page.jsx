@@ -35,6 +35,11 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 
+// export const metadata = {
+//   title: "Contact | Summiit Gupta",
+//   description: "Portfolio of Summiit Gupta",
+// };
+
 const Contact = () => {
   let { data: session } = useSession();
   const [name, setName] = useState("");
@@ -207,7 +212,7 @@ const Contact = () => {
                 <h2 className="py-3 tracking-wide  text-gray-800 text-3xl font-semibold dark:text-white">
                   Sumit Gupta
                 </h2>
-                <p>Full-Stack Developer</p>
+                <p>Full-Stack & Solidity Blockchain Developer</p>
                 <p>summitgupta07@gmail.com</p>
                 <p>7355708603</p>
                 <p className="py-4">
