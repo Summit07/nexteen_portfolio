@@ -38,12 +38,12 @@ const Offers = () => {
             projectUrl="/offers/offerbang"
             tech="FullStack Developer"
           />
-          <ProjectItem
+          {/* <ProjectItem
             title="Offer Letter"
             backgroundImg={offerKOL}
             projectUrl="/offers/offerK"
             tech="FullStack Developer"
-          />
+          /> */}
 
           <ProjectItem
             title="Your Next..."
