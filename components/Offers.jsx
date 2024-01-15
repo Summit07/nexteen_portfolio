@@ -32,7 +32,7 @@ const Offers = () => {
             projectUrl="/offers/CWT"
             tech="Current Offer Letter"
           />
-          <ProjectItem
+          {/* <ProjectItem
             title="Offer Letter"
             backgroundImg={offerBang}
             projectUrl="/offers/offerbang"
@@ -43,7 +43,7 @@ const Offers = () => {
             backgroundImg={offerKOL}
             projectUrl="/offers/offerK"
             tech="FullStack Developer"
-          />
+          /> */}
 
           <ProjectItem
             title="Your Next..."
