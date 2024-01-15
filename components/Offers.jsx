@@ -20,12 +20,12 @@ const Offers = () => {
             projectUrl="/offers/fufiexp"
             tech="Experiance letter"
           />
-          <ProjectItem
+          {/* <ProjectItem
             title="CodingWebTech"
             backgroundImg={cwtexp}
             projectUrl="/offers/cwtexp"
             tech="Experiance letter"
-          />
+          /> */}
           <ProjectItem
             title="CodingWebTech"
             backgroundImg={bistro}

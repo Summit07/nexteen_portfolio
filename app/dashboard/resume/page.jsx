@@ -120,7 +120,7 @@ const resume = () => {
             <span className="px-2">|</span>Lucknow, UP
           </p>
           <p className="py-1 italic">
-            Coding Web Tech ,Fulltime Work (01/July/2023 - 30/September/2023)
+            Coding Web Tech ,Fulltime Work (01/July/2023 - Present)
           </p>
           <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
             <li>
@@ -227,7 +227,7 @@ const resume = () => {
             <span className="px-2">|</span>Github
           </p>
           <p className="py-1 italic">
-            Freelance / Learning (Nov/2019 – Dec/2020)
+            Freelance / Learning (Dec/2019 – Jan/2021)
           </p>
           <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
             <li>
