@@ -35,10 +35,8 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 
-// export const metadata = {
-//   title: "Contact | Summiit Gupta",
-//   description: "Portfolio of Summiit Gupta",
-// };
+// Note: This is a "use client" component, so metadata must be exported from a parent layout
+// Metadata is defined in the layout.js file for server-side rendering
 
 const Contact = () => {
   let { data: session } = useSession();

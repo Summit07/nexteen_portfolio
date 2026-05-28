@@ -22,8 +22,31 @@ import homeland from "../../../public/assets/projects/homeland.png";
 import ProjectItem from "../../../components/ProjectItem";
 
 export const metadata = {
-  title: "Projects | Summiit Gupta",
-  description: "Portfolio of Summiit Gupta",
+  title: "Projects - Sumit Gupta | Web Development & Blockchain Portfolio",
+  description:
+    "Browse projects from Sumit Gupta including full-stack web applications, cryptocurrency trading platforms, and blockchain solutions.",
+  keywords: [
+    "Projects",
+    "Web Development",
+    "Next.js",
+    "React",
+    "Blockchain",
+    "Cryptocurrency",
+  ],
+  openGraph: {
+    title: "Sumit Gupta - Project Portfolio",
+    description: "Check out my latest web development and blockchain projects",
+    url: "https://yourportfolio.com/dashboard/projects",
+    type: "website",
+    images: [
+      {
+        url: "https://yourportfolio.com/og-projects.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Sumit Gupta Projects",
+      },
+    ],
+  },
 };
 
 const Projects = () => {

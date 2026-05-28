@@ -1,0 +1,26 @@
+# robots.txt for portfolio website
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /.next/
+Disallow: /register
+Disallow: /login
+Allow: /dashboard
+
+# Sitemap location
+Sitemap: https://yourportfolio.com/sitemap.xml
+
+# Crawl delay (optional - set if you want to limit crawler requests)
+Crawl-delay: 1
+
+# User-agent specific rules
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: MJ12bot
+Crawl-delay: 10

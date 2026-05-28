@@ -21,8 +21,33 @@ import swagger from "../../../public/assets/skills/swagger.svg";
 import vercel from "../../../public/assets/skills/logo-vercel.svg";
 
 export const metadata = {
-  title: "Skill | Summiit Gupta",
-  description: "Portfolio of Summiit Gupta",
+  title: "Skills - Sumit Gupta | Next.js, React, Solidity, Node.js",
+  description:
+    "Technical skills of Sumit Gupta - Frontend (Next.js, React, Tailwind), Backend (Node.js, MongoDB), Blockchain (Solidity), and DevOps expertise.",
+  keywords: [
+    "Skills",
+    "Next.js",
+    "React",
+    "Node.js",
+    "Solidity",
+    "Blockchain",
+    "MongoDB",
+    "Tailwind CSS",
+  ],
+  openGraph: {
+    title: "Sumit Gupta - Technical Skills",
+    description: "Comprehensive technical expertise across web and blockchain development",
+    url: "https://yourportfolio.com/dashboard/skills",
+    type: "website",
+    images: [
+      {
+        url: "https://yourportfolio.com/og-skills.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Sumit Gupta Skills",
+      },
+    ],
+  },
 };
 
 const Skills = () => {
