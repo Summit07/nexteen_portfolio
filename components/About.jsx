@@ -12,23 +12,17 @@ const About = () => {
             About
           </p>
           <h2 className="py-4">Who I Am</h2>
-          <p className="py-2 text-gray-600">
-            / / I am not your average developer
+          <p className="py-2 text-gray-600 dark:text-white">
+            Full-Stack &amp; Generative AI Engineer with 6+ years of software development experience.
           </p>
-          <p className="py-2 text-gray-600">
-            I have always had a knack for technology and working with computers.
-            In 2019 I started working with HTML and CSS to make some minor edits
-            on a small business website that I was operating. What I thought was
-            just a few small edits turned into a love for programming.
+          <p className="py-2 text-gray-600 dark:text-white leading-relaxed">
+            Focused on frontend and backend engineering, distributed systems, financial and real-time trading infrastructure, and Generative AI applications. Hands-on experience building REST APIs, microservices, multi-agent workflows, and Retrieval-Augmented Generation (RAG) systems using Node.js, NestJS, Python/FastAPI, LangChain, LangGraph, LangSmith, React.js, Next.js, Google ADK, TypeSafe AI Jev, DeepEval, Redis, PostgreSQL, MongoDB, and vector databases.
           </p>
-          <p className="py-2 text-gray-600">
-            Fascinated with how intricate programming can be I was quickly drawn
-            to learn more. I started learning javascript and was even more
-            enthused with making websites interactive. I am now spending my time
-            building projects with React JS and learning new technologies.
+          <p className="py-2 text-gray-600 dark:text-white leading-relaxed">
+            Experienced in System 1 / System 2 decision routing, hybrid and graph retrieval, AI observability/evaluation, authentication and tenant-aware access controls, and performance optimization.
           </p>
-          <Link href="/#projects">
-            <p className="py-2 text-gray-600 underline cursor-pointer">
+          <Link href="/dashboard/projects">
+            <p className="py-2 text-blue-600 underline cursor-pointer">
               Check out some of my latest projects.
             </p>
           </Link>

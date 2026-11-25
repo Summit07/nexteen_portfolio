@@ -5,13 +5,101 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Summiit Gupta",
-  description: "Portfolio of Summiit Gupta",
+  title: "Sumit Gupta - Full-Stack & Generative AI Engineer | Portfolio",
+  description: "Portfolio of Sumit Gupta - Full-Stack & Generative AI Engineer with 6+ years of software development experience specializing in distributed systems, multi-agent workflows, RAG systems, Next.js, FastAPI, Node.js, and GenAI.",
+  keywords: [
+    "Sumit Gupta",
+    "Full-Stack Engineer",
+    "Generative AI Engineer",
+    "Multi-Agent Systems",
+    "LangGraph",
+    "Google ADK",
+    "RAG",
+    "Graph RAG",
+    "Hybrid RAG",
+    "TypeSafe AI Jev",
+    "Next.js",
+    "React",
+    "FastAPI",
+    "Node.js",
+    "NestJS",
+    "PostgreSQL",
+    "pgvector",
+    "Redis",
+    "Docker",
+    "Portfolio",
+  ].join(", "),
+  authors: [
+    {
+      name: "Sumit Gupta",
+      url: "https://sumiit-portfolio.vercel.app",
+    },
+  ],
+  creator: "Sumit Gupta",
+  metadataBase: new URL("https://sumiit-portfolio.vercel.app"),
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://sumiit-portfolio.vercel.app",
+    siteName: "Sumit Gupta - Portfolio",
+    title: "Sumit Gupta - Full-Stack & Generative AI Engineer",
+    description: "Check out my multi-agent systems, RAG workflows, distributed systems, and professional experience.",
+    images: [
+      {
+        url: "https://sumiit-portfolio.vercel.app/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Sumit Gupta Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sumit Gupta - Full-Stack & Generative AI Engineer",
+    description: "Portfolio showcasing multi-agent systems, RAG applications, and distributed backend expertise",
+    creator: "@SumitGupta",
+    images: ["https://sumiit-portfolio.vercel.app/og-image.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://sumiit-portfolio.vercel.app",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* Preconnect to external services for performance */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://yourportfolio.com" />
+        
+        {/* Additional Meta Tags */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
+        
+        {/* Favicon */}
+        <link rel="icon" href="/SGlogo.jpg" />
+        <link rel="apple-touch-icon" href="/SGlogo.jpg" />
+        
+        {/* Theme Color */}
+        <meta name="theme-color" content="#000000" />
+        <meta name="msapplication-TileColor" content="#000000" />
+      </head>
       <body className={inter.className}>
         <SessionAuthProvider>{children}</SessionAuthProvider>
       </body>
