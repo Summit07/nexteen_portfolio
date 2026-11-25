@@ -5,39 +5,48 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Sumit Gupta - Full Stack Web Developer | Portfolio",
-  description: "Portfolio of Sumit Gupta - Full Stack Developer specializing in Next.js, React, Node.js, blockchain, and cryptocurrency technologies.",
+  title: "Sumit Gupta - Full-Stack & Generative AI Engineer | Portfolio",
+  description: "Portfolio of Sumit Gupta - Full-Stack & Generative AI Engineer with 6+ years of software development experience specializing in distributed systems, multi-agent workflows, RAG systems, Next.js, FastAPI, Node.js, and GenAI.",
   keywords: [
-    "Web Developer",
-    "Full Stack Developer",
+    "Sumit Gupta",
+    "Full-Stack Engineer",
+    "Generative AI Engineer",
+    "Multi-Agent Systems",
+    "LangGraph",
+    "Google ADK",
+    "RAG",
+    "Graph RAG",
+    "Hybrid RAG",
+    "TypeSafe AI Jev",
     "Next.js",
     "React",
+    "FastAPI",
     "Node.js",
-    "JavaScript",
-    "Tailwind CSS",
-    "Blockchain",
-    "Cryptocurrency",
-    "Solidity",
+    "NestJS",
+    "PostgreSQL",
+    "pgvector",
+    "Redis",
+    "Docker",
     "Portfolio",
   ].join(", "),
   authors: [
     {
       name: "Sumit Gupta",
-      url: "https://yourportfolio.com",
+      url: "https://sumiit-portfolio.vercel.app",
     },
   ],
   creator: "Sumit Gupta",
-  metadataBase: new URL("https://yourportfolio.com"),
+  metadataBase: new URL("https://sumiit-portfolio.vercel.app"),
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://yourportfolio.com",
+    url: "https://sumiit-portfolio.vercel.app",
     siteName: "Sumit Gupta - Portfolio",
-    title: "Sumit Gupta - Full Stack Web Developer",
-    description: "Check out my latest web development projects and professional experience.",
+    title: "Sumit Gupta - Full-Stack & Generative AI Engineer",
+    description: "Check out my multi-agent systems, RAG workflows, distributed systems, and professional experience.",
     images: [
       {
-        url: "https://yourportfolio.com/og-image.jpg",
+        url: "https://sumiit-portfolio.vercel.app/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Sumit Gupta Portfolio",
@@ -46,10 +55,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sumit Gupta - Full Stack Developer",
-    description: "Portfolio showcasing web development and blockchain expertise",
+    title: "Sumit Gupta - Full-Stack & Generative AI Engineer",
+    description: "Portfolio showcasing multi-agent systems, RAG applications, and distributed backend expertise",
     creator: "@SumitGupta",
-    images: ["https://yourportfolio.com/og-image.jpg"],
+    images: ["https://sumiit-portfolio.vercel.app/og-image.jpg"],
   },
   robots: {
     index: true,
@@ -63,7 +72,7 @@ export const metadata = {
     },
   },
   alternates: {
-    canonical: "https://yourportfolio.com",
+    canonical: "https://sumiit-portfolio.vercel.app",
   },
 };
 

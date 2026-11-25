@@ -13,6 +13,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
     { href: "/dashboard/about", label: "About" },
     { href: "/dashboard/skills", label: "Skills" },
     { href: "/dashboard/projects", label: "Projects" },
+    { href: "/dashboard/experience", label: "Experience" },
     { href: "/dashboard/resume", label: "Resume" },
     { href: "/dashboard/contact", label: "Contact" },
   ];

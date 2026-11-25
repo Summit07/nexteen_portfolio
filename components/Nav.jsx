@@ -35,6 +35,7 @@ const Navbar = () => {
     { href: "/dashboard/about", label: "About", id: "about" },
     { href: "/dashboard/skills", label: "Skills", id: "skills" },
     { href: "/dashboard/projects", label: "Projects", id: "projects" },
+    { href: "/dashboard/experience", label: "Experience", id: "experience" },
     { href: "/dashboard/resume", label: "Resume", id: "resume" },
     { href: "/dashboard/contact", label: "Contact", id: "contact" },
   ];

@@ -9,8 +9,8 @@ import { redirect } from "next/navigation";
 import { authOptions } from "../api/auth/[...nextauth]/route";
 
 export const metadata = {
-  title: "Summiit Gupta | Dashboard",
-  description: "Portfolio of Summiit Gupta",
+  title: "Sumit Gupta | Full-Stack & Generative AI Engineer",
+  description: "Portfolio of Sumit Gupta - Full-Stack & Generative AI Engineer",
 };
 
 const DashboardPage = async () => {
@@ -30,12 +30,11 @@ const DashboardPage = async () => {
               Sumit Gupta
             </span>
           </h1>
-          <h1 className="py-2  text-2xl md:text-6xl   bg-clip-text text-transparent dark:bg-gradient-to-r bg-gradient-to-tr dark:from-white from-black to-neutral-600 dark:to-neutral-700 ">
-            A FullStack Web & Solidity Blockchain Developer
+          <h1 className="py-2  text-2xl md:text-5xl   bg-clip-text text-transparent dark:bg-gradient-to-r bg-gradient-to-tr dark:from-white from-black to-neutral-600 dark:to-neutral-700 ">
+            Full-Stack &amp; Generative AI Engineer
           </h1>
-          <p className="py-4  sm:max-w-[70%] m-auto text-sm md:text-lg  bg-clip-text text-transparent dark:bg-gradient-to-r bg-gradient-to-tr dark:from-white from-black to-neutral-600 dark:to-neutral-700 ">
-            I’m building responsive FullStack web applications with back-end,
-            technologies like MERN with NEXTJS.
+          <p className="py-4  sm:max-w-[75%] m-auto text-sm md:text-lg  bg-clip-text text-transparent dark:bg-gradient-to-r bg-gradient-to-tr dark:from-white from-black to-neutral-600 dark:to-neutral-700 ">
+            Software engineer with 6+ years of software development experience. Focused on frontend and backend engineering, distributed systems, financial and real-time trading infrastructure, and Generative AI applications.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <a

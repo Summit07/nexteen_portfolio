@@ -3,9 +3,9 @@ import SnowProvider from "../Providers/SnowProvider/SnowProvider";
 import Nav from "../../components/Nav";
 
 export const metadata = {
-  title: "Sumit Gupta - Portfolio",
+  title: "Sumit Gupta - Full-Stack & Generative AI Engineer | Portfolio",
   description:
-    "Explore the portfolio of Sumit Gupta - Full Stack Developer specializing in Next.js, React, Node.js, Solidity, and blockchain technologies.",
+    "Explore the portfolio of Sumit Gupta - Full-Stack & Generative AI Engineer specializing in distributed systems, multi-agent workflows, RAG, Next.js, Node.js, and Python/FastAPI.",
 };
 
 const DashboardLayout = ({ children }) => {

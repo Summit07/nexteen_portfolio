@@ -210,12 +210,14 @@ const Contact = () => {
                 <h2 className="py-3 tracking-wide  text-gray-800 text-3xl font-semibold dark:text-white">
                   Sumit Gupta
                 </h2>
-                <p>Full-Stack & Solidity Blockchain Developer</p>
+                <p className="font-semibold text-cyan-600 dark:text-cyan-400">
+                  Full-Stack &amp; Generative AI Engineer
+                </p>
                 <p>summitgupta07@gmail.com</p>
-                <p>7355708603</p>
-                <p className="py-4">
-                  I am available for freelance or full-time positions. Contact
-                  me and let&apos;s talk.
+                <p>+91 7355708603</p>
+                <p className="text-xs text-gray-500 dark:text-gray-400">Lucknow, India</p>
+                <p className="py-4 text-sm leading-relaxed">
+                  Software engineer with 6+ years of software development experience. Focused on frontend and backend engineering, distributed systems, financial and real-time trading infrastructure, and Generative AI applications. Contact me and let&apos;s talk.
                 </p>
               </div>
               <div>

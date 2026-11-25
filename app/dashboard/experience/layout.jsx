@@ -1,14 +1,16 @@
-const ExprenceLayout = ({ children }) => {
+import React from "react";
+
+export const metadata = {
+  title: "Professional Experience - Sumit Gupta",
+  description: "Career journey and professional software engineering experience of Sumit Gupta.",
+};
+
+const ExperienceLayout = ({ children }) => {
   return (
-    <>
-      <div className="flex flex-row text-black dark:text-white  ">
-        <div className="w-1/6 border-r min-h-screen bg-fixed   pt-20">
-          Exprence Dashboard
-        </div>
-        <div className=" flex   pt-20 ">{children}</div>
-      </div>
-    </>
+    <div className="w-full min-h-screen">
+      {children}
+    </div>
   );
 };
 
-export default ExprenceLayout;
+export default ExperienceLayout;
